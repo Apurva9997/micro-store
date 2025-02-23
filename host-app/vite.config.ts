@@ -9,9 +9,9 @@ export default defineConfig({
     federation({
       name: "host",
       remotes: {
-        catalog: "http://localhost:9001/assets/remoteEntry.js",
-        cart: "http://localhost:9002/assets/remoteEntry.js",
-        profile: "http://localhost:9003/assets/remoteEntry.js",
+        catalog: process.env.CATALOG_URL,
+        cart: process.env.CART_URL,
+        profile: process.env.PROFILE_URL,
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
