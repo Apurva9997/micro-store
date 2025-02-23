@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Store front -->
+  <path
+    d="M4 8C4 6.89543 4.89543 6 6 6H26C27.1046 6 28 6.89543 28 8V26C28 27.1046 27.1046 28 26 28H6C4.89543 28 4 27.1046 4 26V8Z"
+    fill="#0EA5E9" />
+
+  <!-- Door -->
+  <rect x="14" y="18" width="4" height="8" fill="white" />
+
+  <!-- Windows -->
+  <rect x="8" y="12" width="4" height="4" fill="white" />
+  <rect x="20" y="12" width="4" height="4" fill="white" />
+
+  <!-- Roof -->
+  <path d="M2 8L16 2L30 8H2Z" fill="#0284C7" />
+</svg> 

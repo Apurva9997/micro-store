@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.cart-page {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+}
+
+.cart-header {
+  @apply mb-6;
+}
+
+.cart-header h1 {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+.empty-cart {
+  @apply text-center py-12 bg-white rounded-lg shadow-sm px-4;
+}
+
+.empty-cart h2 {
+  @apply text-xl font-semibold text-gray-900 mb-2;
+}
+
+.empty-cart p {
+  @apply text-gray-600 mb-6;
+}
+
+.empty-cart button {
+  @apply inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors duration-200;
+}
+
+.cart-content {
+  @apply bg-white rounded-lg shadow-sm overflow-hidden;
+}
+
+.cart-items {
+  @apply divide-y divide-gray-200;
+}
+
+.cart-item {
+  @apply p-6 flex items-center gap-6;
+}
+
+.cart-item img {
+  @apply w-24 h-24 object-cover rounded-md;
+}
+
+.item-details {
+  @apply flex-1;
+}
+
+.item-details h3 {
+  @apply text-lg font-medium text-gray-900 mb-1;
+}
+
+.item-details p {
+  @apply text-gray-600;
+}
+
+.quantity-controls {
+  @apply flex items-center gap-3 mt-2;
+}
+
+.quantity-controls button {
+  @apply w-8 h-8 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors duration-200 flex items-center justify-center;
+}
+
+.quantity-controls button:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.quantity-controls span {
+  @apply text-gray-900 font-medium;
+}
+
+.remove-button {
+  @apply text-sm text-red-600 hover:text-red-700 transition-colors duration-200;
+}
+
+.item-total {
+  @apply text-right min-w-[100px];
+}
+
+.cart-summary {
+  @apply p-6 bg-gray-50 border-t border-gray-200;
+}
+
+.cart-summary h3 {
+  @apply text-lg font-medium text-gray-900 mb-4;
+}
+
+.summary-row {
+  @apply flex justify-between py-2;
+}
+
+.summary-row.total {
+  @apply pt-4 border-t border-gray-200 font-medium text-lg;
+}
+
+.checkout-button {
+  @apply w-full mt-6 px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+}

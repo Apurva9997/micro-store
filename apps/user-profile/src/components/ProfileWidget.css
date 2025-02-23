@@ -1,0 +1,14 @@
+.profile-widget {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.profile-widget:hover {
+  background: #f8f9fa;
+}
+
+.profile-icon {
+  font-size: 1.5rem;
+} 

@@ -1,0 +1,4 @@
+packages:
+  - "host-app"
+  - "apps/*"
+  - "shared"
