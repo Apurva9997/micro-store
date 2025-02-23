@@ -9,9 +9,9 @@ export default defineConfig({
     federation({
       name: "host",
       remotes: {
-        catalog: process.env.CATALOG_URL,
-        cart: process.env.CART_URL,
-        profile: process.env.PROFILE_URL,
+        catalog: process.env.VITE_CATALOG_URL,
+        cart: process.env.VITE_CART_URL,
+        profile: process.env.VITE_PROFILE_URL,
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
