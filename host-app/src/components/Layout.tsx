@@ -24,19 +24,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
               >
                 MicroStore
               </Link>
-              <div className="hidden md:flex space-x-1">
-                <Link
-                  to="/"
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                    location.pathname === "/" ||
-                    location.pathname.startsWith("/product")
-                      ? "bg-indigo-50 text-indigo-700"
-                      : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
-                  }`}
-                >
-                  Products
-                </Link>
-              </div>
             </div>
 
             {/* Right side - Cart and Profile */}
