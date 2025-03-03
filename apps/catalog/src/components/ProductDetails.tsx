@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { SAMPLE_PRODUCTS, Product } from "./ProductList";
+import { Product } from "../types";
+import { SAMPLE_PRODUCTS } from "../constants";
 
 interface ProductDetailsProps {
   onAddToCart?: (product: {
